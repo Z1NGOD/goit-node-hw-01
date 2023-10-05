@@ -28,7 +28,7 @@ async function removeContact(contactId) {
   return contact;
 }
 
-const addContact = async ({ name, email, phone }) => {
+const addContact = async ( name, email, phone ) => {
   const allContacts = await listContacts();
   const newContact = {
     id: nanoid(),
