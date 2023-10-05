@@ -18,7 +18,7 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
     case "add":
       await contacts
         .addContact(name, email, phone)
-        .then((data) => console.table(data));
+        .then((data) => console.log(data));
       break;
 
     case "remove":
